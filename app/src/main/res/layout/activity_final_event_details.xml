@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_final_event_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborder"
+                android:orientation="vertical"
+                android:padding="@dimen/padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsFromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/date_of_journey_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsToDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/date_of_return_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsPickUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pickup_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsDropOff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/dropoff_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsPassengers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no_of_passengers_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsLuggage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/luggage_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsDurationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/trip_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFinalEventDetailsTravellingName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/transportation_n"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvFinalEventDetailsOtherReq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:maxLines="3"
+                    android:text="@string/other_requirements_n"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize13"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin15"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="@string/list_of_passengers"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSize15"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/lvFinalEventDetailsPassengersList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/grayborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin5"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/travelling_details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize15"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/element_travelling_type" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/grayborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin5"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/hotel_details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize15"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/element_hotel_booking" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btFinalEventDetailsAmountSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btSignUpAllheight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/btSignUpAllMarginTop"
+        android:background="@drawable/yellow"
+        android:text="@string/_25456"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btSizeAll" />
+
+</LinearLayout>

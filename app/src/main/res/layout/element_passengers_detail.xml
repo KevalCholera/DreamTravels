@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding7">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvElementListOfPassengerClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/ripple_anim"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_anim"
+            android:padding="@dimen/padding10">
+
+            <TextView
+                android:id="@+id/tvElementListOfPassengersIndex"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circular_view"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvElementListOfPassengersFullName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Keval Cholera"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize13"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivElementListOfPassengersCancel"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circular_view"
+                        android:src="@mipmap/cancel" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvElementListOfPassengersEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kevalcholeracholera369_gmail_com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvElementListOfPassengersContact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/_8456987412"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize13" />
+
+                    <TextView
+                        android:id="@+id/tvElementListOfPassengersAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize13" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

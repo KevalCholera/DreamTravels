@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10">
+
+                <LinearLayout
+                    android:id="@+id/llListOfPassengersMainList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingRight="@dimen/padding5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/tvMarginTopBottomStartEndAll"
+                                android:text="@string/passenger_first_name"
+                                android:textColor="@color/background" />
+
+                            <EditText
+                                android:id="@+id/etListOfPassengerFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:background="@drawable/grayborder"
+                                android:gravity="top"
+                                android:imeOptions="actionNext"
+                                android:nextFocusRight="@+id/etListOfPassengerLastName"
+                                android:padding="@dimen/padding10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/etSignUpSizeAll" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/padding5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/tvMarginTopBottomStartEndAll"
+                                android:text="@string/passenger_last_name"
+                                android:textColor="@color/background" />
+
+                            <EditText
+                                android:id="@+id/etListOfPassengerLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:background="@drawable/grayborder"
+                                android:gravity="top"
+                                android:imeOptions="actionNext"
+                                android:nextFocusRight="@+id/etListOfPassengersContact"
+                                android:padding="@dimen/padding10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/etSignUpSizeAll" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingRight="@dimen/padding5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/tvMarginTopBottomStartEndAll"
+                                android:text="@string/contact"
+                                android:textColor="@color/background" />
+
+                            <EditText
+                                android:id="@+id/etListOfPassengersContact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:background="@drawable/grayborder"
+                                android:gravity="top"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:nextFocusRight="@+id/etListOfPassengersAge"
+                                android:padding="@dimen/padding10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/etSignUpSizeAll" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/padding5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/tvMarginTopBottomStartEndAll"
+                                android:text="@string/passenger_Age"
+                                android:textColor="@color/background" />
+
+                            <EditText
+                                android:id="@+id/etListOfPassengersAge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:background="@drawable/grayborder"
+                                android:digits="1234567890"
+                                android:gravity="top"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:nextFocusRight="@+id/etListOfPassengersEmail"
+                                android:padding="@dimen/padding10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/etSignUpSizeAll" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tvMarginTopBottomStartEndAll"
+                        android:text="@string/email_add"
+                        android:textColor="@color/background" />
+
+                    <EditText
+                        android:id="@+id/etListOfPassengersEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/grayborder"
+                        android:gravity="top"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/padding10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/etSignUpSizeAll" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btListOfPassengersAddPassenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btSignUpAllheight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:background="@drawable/yellow"
+                    android:paddingLeft="@dimen/padding30"
+                    android:paddingRight="@dimen/padding30"
+                    android:text="@string/add_passenger"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btSizeAll" />
+
+                <ListView
+                    android:id="@+id/lvListOfPassengersList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvListOfPassengersTravelMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin3"
+        android:gravity="center"
+        android:text="@string/how_do_you_want_to_travel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize13" />
+
+    <RadioGroup
+        android:id="@+id/rgListOfPassengersTravellingMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin5"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbListOfPassengersBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/bus"
+            android:textSize="@dimen/textSize13" />
+
+        <RadioButton
+            android:id="@+id/rbListOfPassengersTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/train"
+            android:textSize="@dimen/textSize13" />
+
+        <RadioButton
+            android:id="@+id/rbListOfPassengersFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/flight"
+            android:textSize="@dimen/textSize13" />
+
+        <RadioButton
+            android:id="@+id/rbListOfPassengersCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/car"
+            android:textSize="@dimen/textSize13" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btListOfPassengersSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btSignUpAllheight"
+        android:background="@drawable/yellow"
+        android:text="@string/select_travel_root"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btSizeAll" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lvHotelBooking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:divider="@null"
+    android:dividerHeight="0dp"
+    android:padding="@dimen/padding10"
+    android:scrollbars="none" />

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSignUpFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/signUpMargin"
+            android:layout_marginRight="@dimen/etSignUpPersonNameMarginEnd"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:hint="@string/first_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <EditText
+            android:id="@+id/etSignUpLastName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/etSignUpLastNameMarginStart"
+            android:layout_marginRight="@dimen/signUpMargin"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:hint="@string/last_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:nextFocusForward="@+id/etSignUpContact"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signUpMargin"
+        android:layout_marginTop="@dimen/etSignUpAllMarginTop">
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/darkgrayborder"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="10"
+            android:text="+91"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <EditText
+            android:id="@+id/etSignUpContact"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:digits="1234567890"
+            android:hint="@string/contact"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <ImageView
+            android:id="@+id/ivSignUpAvailableNumber"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_available"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSignUpUnAvailableNumber"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_unavailable"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signUpMargin"
+        android:layout_marginTop="@dimen/etSignUpAllMarginTop">
+
+        <EditText
+            android:id="@+id/etSignUpEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <ImageView
+            android:id="@+id/ivSignUpAvailableEmail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_available"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSignUpUnAvailableEmail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_unavailable"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/etSignUpAllMarginTop"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/signUpMargin"
+            android:layout_marginRight="@dimen/etSignUpPersonNameMarginEnd"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:hint="@string/password_signup"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <EditText
+            android:id="@+id/etSignUpConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/etSignUpLastNameMarginStart"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:hint="@string/confirm_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <ImageView
+            android:id="@+id/ivSignUpAvailablePass"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_available"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSignUpUnAvailablePass"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_unavailable"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signUpMargin"
+        android:layout_marginTop="@dimen/etSignUpAllMarginTop">
+
+        <EditText
+            android:id="@+id/etSignUpAlternateEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/etHeightAll"
+            android:layout_weight="1"
+            android:background="@drawable/grayborder"
+            android:hint="@string/alternate_email_"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/etSignUpAllPaddingStartEnd"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/etSignUpSizeAll" />
+
+        <ImageView
+            android:id="@+id/ivSignUpAvailableAlternateEmail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_available"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSignUpUnAvailableAlternateEmail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:src="@mipmap/img_unavailable"
+
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btSignUpSaveNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btSignUpAllheight"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/tvSignUpSignUpMarginBottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/btSignUpAllMarginTop"
+        android:background="@drawable/yellow"
+        android:text="@string/create_amount"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btSizeAll" />
+</LinearLayout>
